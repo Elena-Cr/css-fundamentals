@@ -1,0 +1,65 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button {
+  font-family: sans-serif;
+  color: rgb(24, 24, 24);
+  font-size: 12px;
+}
+article {
+  border: 5px solid #a8b198;
+}
+h1 {
+  text-align: center;
+  background-color: olivedrab;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+}
+h2 {
+  font-size: 23px;
+}
+h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+}
+article p {
+  font-size: 15px;
+}
+a:link {
+  color: black;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: olivedrab;
+}
+a:active {
+  color: olivedrab;
+}
+.Details {
+  font-size: 17px;
+  color: olivedrab;
+}
+li {
+  list-style: square;
+}
+button {
+  font-weight: lighter;
+  text-transform: uppercase;
+  background-color: rgb(168, 177, 152);
+  border: none;
+  font-size: 15px;
+}
+button:hover {
+  background-color: olivedrab;
+}

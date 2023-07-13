@@ -4,7 +4,7 @@ h3,
 h4,
 p,
 li {
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: sans-serif;
   color: #444;
 }
 /* footer p {
@@ -70,4 +70,34 @@ aside {
   background-color: #f7f7f7;
   border-top: 5px solid #e4e129;
   border-bottom: 5px solid #e4e129;
+}
+/* .first-li {
+  font-weight: bold;
+} */
+li:first-child {
+  font-weight: bold;
+}
+li:last-child {
+  font-style: italic;
+}
+li:nth-child(even) {
+  /* color: red; */
+}
+/* Styling links */
+a:link {
+  color: #40657e;
+  text-decoration: none;
+}
+a:visited {
+  /* color:#777 */
+  color: #40657e;
+}
+a:hover {
+  color: #03446e;
+  font-weight: bold;
+  text-decoration: underline #03446e;
+}
+a:active {
+  background-color: #03446e;
+  font-style: italic;
 }
