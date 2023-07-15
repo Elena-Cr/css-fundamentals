@@ -29,7 +29,7 @@ body {
   padding-right: 40px; */
   padding: 20px 40px;
   margin-bottom: 60px;
-  height: 80px;
+  /* height: 80px; */
   text-align: center;
 }
 .post-header {
@@ -45,9 +45,7 @@ aside {
 article {
   margin-bottom: 60px;
 }
-/* footer p {
-  font-size: 15px;
-} */
+/* SMALLER CONTAINERS */
 h2,
 h3 {
   color: #537964;
@@ -118,10 +116,21 @@ li:last-child {
 .related {
   list-style: none;
 }
+nav a:link {
+  /* background-color: rebeccapurple;
+  margin: 20px;
+  padding: 20px;
+
+  display: block; */
+  margin-right: 29px;
+}
+nav a:link:last-child {
+  margin-right: 0;
+}
 
 /* .first-li {
   font-weight: bold;
-} */
+} 
 li:first-child {
   font-weight: bold;
 }
@@ -129,9 +138,10 @@ li:last-child {
   font-style: italic;
 }
 li:nth-child(even) {
-  /* color: red; */
-}
-/* Styling links */
+   color: red; 
+ } 
+
+Styling links */
 a:link {
   color: #a8b198;
   text-decoration: none;
