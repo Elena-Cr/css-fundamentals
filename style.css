@@ -63,6 +63,7 @@ h1 {
 h2 {
   font-size: 35px;
   margin-bottom: 30px;
+  position: relative;
 }
 
 h3 {
@@ -137,6 +138,29 @@ button {
   position: absolute;
   bottom: 50px;
   right: 50px;
+}
+/* pseudo-elements */
+
+/* h1::first-letter {
+  font-style: italic;
+} */
+/* p::first-line {
+  color: green;
+} */
+/* h3 + p:first-line {
+  color: green;
+} */
+h2::after {
+  content: "TOP";
+  background-color: rgb(129, 99, 22);
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  position: absolute;
+  top: -15px;
+  right: -25px;
 }
 /* .first-li {
   font-weight: bold;
