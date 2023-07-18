@@ -1,0 +1,128 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button {
+  font-family: sans-serif;
+  color: rgb(24, 24, 24);
+  font-size: 12px;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+article {
+  border: 5px solid #a8b198;
+  margin: 30px auto;
+  width: 900px;
+}
+h1 {
+  text-align: center;
+  background-color: olivedrab;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  padding: 15px 30px;
+  position: relative;
+}
+h2 {
+  font-size: 23px;
+  margin-bottom: 15px;
+}
+h3 {
+  font-size: 10px;
+  text-transform: uppercase;
+  color: rgb(129, 129, 129);
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+article p {
+  font-size: 15px;
+  margin-bottom: 15px;
+}
+a:link {
+  color: black;
+  margin-bottom: 15px;
+}
+a:visited {
+  color: gray;
+}
+a:hover {
+  color: olivedrab;
+}
+a:active {
+  color: olivedrab;
+}
+.Details {
+  font-size: 17px;
+  color: olivedrab;
+  margin-bottom: 10px;
+}
+.product-img {
+  width: 50%;
+  height: auto;
+  padding-left: 25px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+li {
+  list-style: square;
+  padding-bottom: 10px;
+  margin-left: 30px;
+}
+.button-add {
+  text-transform: uppercase;
+  background-color: rgb(168, 177, 152);
+  font-size: 15px;
+  border: 10px solid rgb(168, 177, 152);
+  text-align: center;
+  background-color: rgb(168, 177, 152);
+  font-size: 15px;
+  border: 10px solid rgb(168, 177, 152);
+}
+
+button:hover {
+  background-color: olivedrab;
+  border: 10px solid olivedrab;
+}
+h1::after {
+  content: "SALE";
+  background-color: rgb(109, 34, 179);
+  font-size: 14px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+  color: white;
+  position: absolute;
+  top: -15px;
+  left: -25px;
+  letter-spacing: 1.5px;
+}
+.color {
+  background-color: #000;
+  height: 22px;
+  width: 22px;
+  display: inline-block;
+  margin-right: 10px;
+}
+.color-blue {
+  background-color: blue;
+}
+.color-red {
+  background-color: red;
+}
+.color-yellow {
+  background-color: yellow;
+}
+.color-green {
+  background-color: green;
+}
+.color-brown {
+  background-color: rgb(41, 24, 24);
+}
