@@ -18,7 +18,7 @@ body {
   position: relative;
 }
 .container {
-  width: 800px;
+  width: 1200px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -192,4 +192,38 @@ a:hover {
 a:active {
   background-color: #537964;
   font-style: italic;
+}
+/* FLOATS */
+.author-img {
+  float: left;
+}
+.author {
+  margin-left: 20px;
+  margin-top: 10px;
+  float: left;
+}
+h1 {
+  float: left;
+}
+nav {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+article {
+  width: 825px;
+  float: left;
+}
+aside {
+  width: 300px;
+  float: right;
+}
+footer {
+  clear: both;
 }
