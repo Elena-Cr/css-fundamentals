@@ -15,6 +15,7 @@ button {
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 article {
   border: 5px solid #a8b198;
@@ -43,7 +44,7 @@ h3 {
   margin-top: 15px;
 }
 article p {
-  font-size: 15px;
+  font-size: 20px;
   margin-bottom: 15px;
 }
 a:link {
@@ -59,32 +60,36 @@ a:hover {
 a:active {
   color: olivedrab;
 }
-.Details {
+.product-details {
   font-size: 17px;
   color: olivedrab;
-  margin-bottom: 10px;
 }
 .product-img {
-  width: 50%;
   height: auto;
-  padding-left: 25px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+}
+.price {
+  margin-top: 10px;
+}
+.shiping {
+  margin-top: 13px;
+  font-size: 15px;
 }
 li {
   list-style: square;
   padding-bottom: 10px;
-  margin-left: 30px;
+  margin-left: 20px;
+  font-size: 19px;
+}
+li:last-child {
+  padding-bottom: 0;
 }
 .button-add {
   text-transform: uppercase;
-  background-color: rgb(168, 177, 152);
   font-size: 15px;
   border: 10px solid rgb(168, 177, 152);
   text-align: center;
   background-color: rgb(168, 177, 152);
   font-size: 15px;
-  border: 10px solid rgb(168, 177, 152);
 }
 
 button:hover {
@@ -104,25 +109,61 @@ h1::after {
   left: -25px;
   letter-spacing: 1.5px;
 }
+.colour-picker {
+  padding: 20px 0;
+}
 .color {
   background-color: #000;
-  height: 22px;
-  width: 22px;
+  height: 20px;
+  width: 20px;
   display: inline-block;
   margin-right: 10px;
 }
 .color-blue {
-  background-color: blue;
+  background-color: rgb(56, 56, 224);
 }
 .color-red {
-  background-color: red;
+  background-color: rgb(221, 53, 53);
 }
 .color-yellow {
-  background-color: yellow;
+  background-color: rgb(223, 223, 53);
 }
 .color-green {
-  background-color: green;
+  background-color: rgb(73, 167, 73);
 }
 .color-brown {
-  background-color: rgb(41, 24, 24);
+  background-color: rgb(54, 47, 47);
+}
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.product-img {
+  float: left;
+  width: 235px;
+}
+.details {
+  float: left;
+  width: 275px;
+  margin: 5px 20px;
+}
+.product-details {
+  float: right;
+  width: 275px;
+  margin: 10px 20px;
+}
+.price {
+  float: left;
+  width: 50%;
+}
+.shiping {
+  float: right;
+  width: 50%;
+}
+.button-add {
+  clear: both;
+}
+.description {
+  clear: both;
 }
