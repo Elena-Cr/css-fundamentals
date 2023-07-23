@@ -42,6 +42,7 @@
         /* CSS GRID */
         /* grid-template-columns: 1fr 1fr 1fr auto; */
         display: grid;
+        display: none;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: repeat(2, 1fr);
 
@@ -63,17 +64,24 @@
         /* grid-row: 3/5; */
       }
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
         font-size: 40px;
         margin: 100px;
 
-        width: 1000px;
+        width: 700px;
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        gap: 50px;
+
+        /* ALIGNING TRACKS INSIDE CONTAINER */
+        justify-content: center;
+        align-content: center;
       }
     </style>
   </head>
