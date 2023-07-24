@@ -164,12 +164,12 @@ h1::after {
 } */
 
 /* FLEXBOX */
-.content {
+/* .content {
   display: flex;
   align-items: flex-start;
   gap: 30px;
   justify-content: space-between;
-}
+} */
 /* .product-img {
   flex: 0 0 230px;
 } */
@@ -192,11 +192,22 @@ h1::after {
 .details {
   margin-bottom: 20px;
 }
-.colour-picker {
+/* .colour-picker {
   display: flex;
   gap: 10px;
   align-items: center;
   justify-content: flex-start;
   margin-top: 25px;
   margin-bottom: 25px;
+} */
+
+/* CSS GRID LAYOUT */
+.content {
+  display: grid;
+  grid-template-columns: 230px 1fr 1fr;
+}
+.colour-picker {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  margin: 25px 0;
 }
