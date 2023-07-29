@@ -40,11 +40,11 @@
         margin: 100px auto;
         width: 800px;
         border-radius: 8px;
-        padding: 32px;
-        padding-left: 96px;
+        padding: 32px 46px 32px 96px;
         display: flex;
         align-items: center;
         gap: 86px;
+        position: relative;
       }
       img {
         height: 200px;
@@ -70,6 +70,55 @@
         font-weight: 300px;
         color: #c1fcdd;
       }
+      /* CONTROLS */
+      .btn {
+        background-color: white;
+        border: none;
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        border-radius: 50%;
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+        cursor: pointer;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .btn-icon {
+        height: 24px;
+        width: 24px;
+        stroke: #344e41;
+      }
+      .left {
+        left: 0;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .right {
+        right: 0;
+        top: 50%;
+        transform: translate(50%, -50%);
+      }
+      .dots {
+        display: flex;
+        gap: 10px;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translate(-50%, 32px);
+      }
+      .dot {
+        height: 12px;
+        width: 12px;
+        background-color: white;
+        border: 1px solid #344e41;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+      .dot:first-child {
+        background-color: #344e41;
+      }
     </style>
   </head>
   <body>
@@ -78,14 +127,12 @@
       <blockquote class="testimonial">
         <p class="testimonial-text">
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-          aliquam non quis, totam quam labore qui placeat? Quaerat ipsa
-          accusamus voluptates minima voluptatum adipisci, praesentium vitae,
-          error nesciunt cupiditate quasi!"
+          aliquam non quis, totam quam labore qui placeat?"
         </p>
         <p class="author">Maria de Almeida</p>
         <p class="testimonial-job">Senior Product Manager at EDP Comercial</p>
       </blockquote>
-      <button class="btn">
+      <button class="btn left">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -101,7 +148,7 @@
           />
         </svg>
       </button>
-      <button class="btn">
+      <button class="btn right">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -117,6 +164,12 @@
           />
         </svg>
       </button>
+      <div class="dots">
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+        <button class="dot">&nbsp;</button>
+      </div>
     </div>
   </body>
 </html>
